@@ -535,3 +535,51 @@ nav ul li {
     background-size: cover;
   }
 }
+/* スマホ〜タブレット共通の自然なレイアウト調整 */
+@media (max-width: 767px) {
+
+  /* コンテナの余白を追加 */
+  .container {
+    padding: 10px 0;
+  }
+
+  /* テキストの左右にしっかり余白をつける */
+  .text_column {
+    width: 100%;
+    float: none;
+    padding: 15px 20px;
+    box-sizing: border-box;
+  }
+
+  /* 数値ブロックを自然なサイズに */
+  .thumbnail {
+    width: 100%;
+    float: none;
+    margin: 20px 0;
+    padding: 10px 0;
+  }
+
+  /* セクション間の余白を復活 */
+  .gallery,
+  .about,
+  .banner,
+  footer {
+    margin-top: 20px;
+  }
+
+  /* 見出しの余白 */
+  h3, h4 {
+    margin-top: 15px;
+    margin-bottom: 10px;
+  }
+
+  /* ヘッダーの調整（詰まり防止） */
+  header {
+    padding: 15px 0;
+  }
+
+  nav ul li {
+    margin: 10px 0;
+  }
+}
+
