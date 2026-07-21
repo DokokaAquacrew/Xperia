@@ -455,26 +455,38 @@ nav ul li {
 }
 
 /* Small Desktops */
-@media (min-width: 768px) and (max-width: 1096px) {
-.text_column {
-	width: 100%;
-}
-.thumbnail {
-	width: 50%;
-}
-.text_column {
-	width: 100%;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	margin-left: 0px;
-	padding-top: 0px;
-	padding-right: 0px;
-	padding-bottom: 0px;
-	padding-left: 0px;
-}
-.banner {
-	margin-top: 0px;
-	padding-top: 0px;
-}
+/* スマホ〜タブレット共通 */
+@media (max-width: 767px) {
+
+  .container {
+    height: auto;
+  }
+
+  .text_column {
+    width: 100%;
+    float: none;
+    padding: 0;
+  }
+
+  .thumbnail {
+    width: 100%;
+    float: none;
+  }
+
+  .banner {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+  }
 }
