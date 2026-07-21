@@ -478,3 +478,60 @@ nav ul li {
 	padding-top: 0px;
 }
 }
+/* スマホ〜タブレット共通修正 */
+@media (max-width: 767px) {
+
+  /* コンテナの高さを自動にする */
+  .container {
+    height: auto;
+    min-height: 0;
+  }
+
+  /* テキストの左右に余白をつける */
+  .text_column {
+    width: 100%;
+    float: none;
+    padding: 10px 15px;
+    box-sizing: border-box;
+  }
+
+  /* 数値ブロックを1列にする */
+  .thumbnail {
+    width: 100%;
+    float: none;
+    margin-top: 20px;
+  }
+
+  /* ヘッダーを縦並びにする */
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .logo {
+    width: 100%;
+    text-align: center;
+    margin: 0;
+  }
+
+  nav {
+    float: none;
+    width: 100%;
+    text-align: center;
+    margin: 10px 0 0 0;
+  }
+
+  nav ul li {
+    width: 100%;
+    margin: 8px 0;
+  }
+
+  /* パララックスの背景をスマホ用に */
+  .banner {
+    background-attachment: scroll;
+    background-size: cover;
+  }
+}
